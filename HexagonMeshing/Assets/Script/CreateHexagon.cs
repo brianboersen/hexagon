@@ -6,7 +6,9 @@ public class CreateHexagon : MonoBehaviour
 {
     private Vector3[] newVertices;
     private int[] newTriangles;
-    private Material defaultMat = new Material(Shader.Find("Diffuse"));
+
+    [SerializeField]
+    private Material defaultMat;
 
     void Awake()
     {
